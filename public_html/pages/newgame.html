@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Civilization Beyond Earth</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <p class="header">Starting a new game</p>
+      <p><i>Civilization: Beyond Earth</i> changes fundamentally the way you define your civilization (or better, colony). Instead of selecting one from a list of preset civilizations with defined special abilities and units, you are now able to bring a much higher degree of customization in the game by selecting a series of details which will define the features of the expedition that was sent to colonize the alien planet you will be landing on. You must choose your <b>sponsor</b>, <b>colonists</b>, <b>spacecraft</b> and <b>cargo</b>. These selections define the initial status of your civilization. Finally, you'll choose the map/planet type, as the ultimate brush into what feels literally as setting up your very own expedition to an alien planet.</p>
+
+
+      <hr color="white" noshade>
+      <p class="miniheader">Sponsors</p>
+      <p>The choice of sponsor is the first part of the new seeded start feature. The sponsors are the big things in the game, "who you represent". The sponsor you choose determine the leader of your colony, the colors of your territory and units, the names of your cities, etc.
+	 <br><br>
+	 The sponsor benefit is probably also the most important of all in the seeded start, and will remain useful for the length of the entire game.</p>
+      <input id="search_sponsors" type="search" size="50" placeholder="Filter"/>
+      <table id="table_sponsors">
+	 <th class="t_logo">Logo</th>
+	 <th class="t_sponsor">Sponsor</th>
+	 <th class="t_specialty">Specialty</th>
+	 <tr>
+	    <td><img src="images/sponsors/america.png" alt="" /></td>
+	    <td>American Reclamation Corporation (ARC)</td>
+	    <td>Covert operations are 25% faster and cause 25% more intrigue</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/sponsors/pan-asian.png" alt="" /></td>
+	    <td>Pan-Asian Cooperative (PAC)</td>
+	    <td>+10% <img src="images/icons/production.png" alt="" /> Production towards Wonders
+	       <br>
+	       +25% Worker speed</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/sponsors/franco-iberia.png" alt="" /></td>
+	    <td>Franco-Iberia</td>
+	    <td>Gain a free Technology for every 10 Virtues developed</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/sponsors/slavic-federation.png" alt="" /></td>
+	    <td>Slavic Federation</td>
+	    <td>Orbital units stay in orbit 20% longer
+	       <br>
+	       The first orbital unit launched grants a free Technology</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/sponsors/polystralia.png" alt="" /></td>
+	    <td>Polystralia</td>
+	    <td>+2 Trade Routes available for the Capital</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/sponsors/protectorate.png" alt="" /></td>
+	    <td>Kavithan Protectorate</td>
+	    <td>Cities and Outposts acquire new tiles twice as fast</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/sponsors/brasilia.png" alt="" /></td>
+	    <td>Brasilia</td>
+	    <td>Units have a +10% <img src="images/icons/strength.png" alt="" /> Strength in melee combat</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/sponsors/african-union.png" alt="" /></td>
+	    <td>People's African Union (PAU)</td>
+	    <td>+10% <img src="images/icons/food.png" alt="" /> Food in growing Cities when <img src="images/icons/health.png" alt="" /> Healthy</td>
+	 </tr>
+      </table>
+
+
+      <hr color="white" noshade>
+      <p class="miniheader">Colonists</p>
+      <p>After choosing your sponsor you get to decide what kind of colonists were put into the spaceship. They will bring another strong, city-based bonus, also useful throughout the game.</p>
+      <input id="search_colonists" type="search" size="50" placeholder="Filter"/>
+      <table id="table_colonists">
+	 <th class="t_logo">Icon</th>
+	 <th class="t_sponsor">Colonist</th>
+	 <th class="t_specialty">Specialty</th>
+	 <tr>
+	    <td><img src="images/colonists/scientists.png" alt="" /></td>
+	    <td>Scientists</td>
+	    <td>+2 <img src="images/icons/science.png" alt="" /> Science in every city</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/colonists/refugees.png" alt="" /></td>
+	    <td>Refugees</td>
+	    <td>+2 <img src="images/icons/food.png" alt="" /> Food in every city</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/colonists/aristocrats.png" alt="" /></td>
+	    <td>Aristocrats</td>
+	    <td>+3 <img src="images/icons/energy.png" alt="" /> Energy in every city
+	       <br>
+	       +1 <img src="images/icons/health.png" alt="" /> Health in every city</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/colonists/engineers.png" alt="" /></td>
+	    <td>Engineers</td>
+	    <td>+2 <img src="images/icons/production.png" alt="" /> Production in every city</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/colonists/artists.png" alt="" /></td>
+	    <td>Artists</td>
+	    <td>+2 <img src="images/icons/culture.png" alt="" /> Culture in every city
+	       <br>
+	       +1 <img src="images/icons/health.png" alt="" /> Health in every city</td>
+	 </tr>
+      </table>
+
+
+      <hr color="white" noshade>
+      <p class="miniheader">Spacecraft</p>
+      <p>When you have picked your colonists, it's time to select the special feature of your spaceship. This bonus is oriented towards the early stages of the game, as it is related to the colonization ship (which probably is dismantled to provide materials for the first city). Thus the advantage quickly becomes obsolete.</p>
+      <input id="search_spacecraft" type="search" size="50" placeholder="Filter"/>
+      <table id="table_spacecraft">
+	 <th class="t_logo">Icon</th>
+	 <th class="t_sponsor">Spacecraft</th>
+	 <th class="t_specialty">Specialty</th>
+	 <tr>
+	    <td><img src="images/spacecraft/surveyor.png" alt="" /></td>
+	    <td>Continental Surveyor</td>
+	    <td>Reveal coasts on map</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/spacecraft/thrusters.png" alt="" /></td>
+	    <td>Retrograde Thrusters</td>
+	    <td>Wider area for choosing where to land first city</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/spacecraft/scanner.png" alt="" /></td>
+	    <td>Tectonic Scanner</td>
+	    <td>No technology is needed to see Petroleum, Geothermal and Titanium resources</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/spacecraft/reactor.png" alt="" /></td>
+	    <td>Fusion Reactor</td>
+	    <td>Begin with 100 <img src="images/icons/energy.png" alt="" /> Energy</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/spacecraft/sensor.png" alt="" /></td>
+	    <td>Lifeform Sensor</td>
+	    <td>Reveal alien nests on map</td>
+	 </tr>
+      </table>
+
+
+      <hr color="white" noshade>
+      <p class="miniheader">Spacecraft</p>
+      <p>When you have picked your colonists, it's time to select the special feature of your spaceship. This bonus is oriented towards the early stages of the game, as it is related to the colonization ship (which probably is dismantled to provide materials for the first city). Thus the advantage quickly becomes obsolete.</p>
+      <input id="search_cargo" type="search" size="50" placeholder="Filter"/>
+      <table id="table_cargo">
+	 <th class="t_logo">Icon</th>
+	 <th class="t_sponsor">Cargo</th>
+	 <th class="t_specialty">Specialty</th>
+	 <tr>
+	    <td><img src="images/cargo/hydroponics.png" alt="" /></td>
+	    <td>Hydroponics</td>
+	    <td>Begin with extra Population in your first city</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/cargo/laboratory.png" alt="" /></td>
+	    <td>Laboratory</td>
+	    <td>Begin with the Pioneering technology</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/cargo/materials.png" alt="" /></td>
+	    <td>Raw Materials</td>
+	    <td>Begin with a Clinic building in your first city</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/cargo/arsenal.png" alt="" /></td>
+	    <td>Weapon Arsenal</td>
+	    <td>Begin with a Soldier unit</td>
+	 </tr>
+	 <tr>
+	    <td><img src="images/cargo/machinery.png" alt="" /></td>
+	    <td>Machinery</td>
+	    <td>Begin with a Worker unit</td>
+	 </tr>
+      </table>
+   </body>
+</html>

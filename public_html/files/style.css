@@ -1,0 +1,292 @@
+body{
+   font: 13px 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+#background{
+   margin: 0;
+   padding: 0;
+   position: fixed; // PROBLEM! PROBLEM! PROBLEM!
+   z-index: 1; 
+   display: none;
+   top: 0;
+   left: 0;
+
+   width: 100%;
+   height: 100%;
+
+   background-image: url(../images/bg3.png);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: right bottom; 
+   background-size: 25%;
+}
+
+.content{
+   max-width: 70%;
+   height: 600px;
+   margin-left: auto; 
+   margin-right: auto;
+   margin-top: 100px;
+   //min-width: 550px;
+   //position: relative;
+}
+
+#logo{
+   z-index: 4;
+   display: none;
+   max-width: 70%;
+   height: auto;
+   margin-left: auto; 
+   margin-right: auto;
+   margin-bottom: 10px;
+}
+
+.hidden{
+   display: none;
+}
+
+#inside{
+   position: relative;
+   overflow: auto;
+   display: none;
+   float: left;
+   width: 80%;
+   height: 600px;
+   max-height: 600px;
+   margin-bottom: 150px;
+   background-color: #13282c;
+   color: #55979f;
+}
+
+#loadtext{
+   //overflow: auto;
+   position: relative;
+   opacity: 0;
+   font-size: 20px;
+   text-align: justify;
+   min-width: 400px;
+   padding: 20px 20px 20px 20px;
+}
+
+#loadtext p{
+   margin-top: 0px;
+}
+
+#menubg{
+   opacity: 0;
+   float: right;
+   width: 20%;
+   height: 600px;
+   background-color: transparent;
+   position: relative;
+}
+
+#firstpane{
+   float: right;
+   left: 180px;
+   position: absolute;
+   display: block;
+   margin-top: 50px;
+}
+
+.menu_list {	
+   width: 150px;
+}
+.menu_head {
+   opacity: 0;
+   color: #FFF;
+   text-decoration: none;
+   font-size: 24px;
+   position: relative;
+   cursor: pointer;
+   padding: 0px 0px 0px 5px;
+   width: 150px;
+   background-color: #13282c;
+   display:block;
+   line-height: 2em;
+   vertical-align: middle;
+   margin: 0 0;
+   margin-left: 20px;
+}
+.menu_body {
+   display:none;
+   margin-left: -180px;
+}
+.menu_body a{
+   display:block;
+   margin: 0 0;
+   color:#13282c;
+   background-color:#4f6f76;
+   padding-left:10px;
+   width: 145px;
+   line-height: 2em;
+   vertical-align: middle;
+   font-weight:bold;
+   text-decoration:none;
+}
+
+.menu_head:hover{
+   background-color: #2d494e;
+}
+
+.menu_body a:hover{
+   background-color: #60868f;//#55979f;
+}
+
+img{
+   padding: 20px 20px 20px 20px; //t r b l
+}
+
+img#coverart{
+   float: right;
+   padding-right: 0px;
+   padding-top: 0px;
+}
+
+.scroll {
+   width: 100%;
+   height: inherit;
+}
+.scroll::-webkit-scrollbar {
+   width: 12px;
+}
+
+.scroll::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+   border-radius: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+iframe{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.header{
+   font-size: 36px;
+   font-weight: bold;
+}
+
+.miniheader{
+   font-size: 28px;
+   font-weight: bold;
+}
+
+table{
+   border-collapse: collapse;
+   width: 100%;
+}
+
+th, td{
+   padding: 10px 15px 10px 15px;
+}
+
+
+tr{
+   vertical-align: middle;
+   width: 100%;
+   border: solid;
+   border-width: 1px 0;
+}
+
+td img{
+   padding: 0px;
+   vertical-align: middle;
+}
+
+.t_logo{
+   width: 10%;
+}
+.t_sponsor{
+   width: 30%;
+}
+.t_specialty{
+   width: 60%;
+}
+
+input {
+   width:100%;
+   height: 24px;
+   font-size: 18px;
+   padding:2px;
+   border:0;
+}
+
+.cover{
+   padding: 0 0 10px 0;
+   height: auto;
+   max-width: 100%;
+}
+
+hr{
+   margin-top: 10px;
+}
+
+.description{
+   display: none; 
+}
+
+p#desc{
+   cursor: pointer;
+}
+
+#comment, #name{
+   width: 50%;
+}
+
+#submit{
+   width: 100px;
+   margin-top: 10px;
+   cursor: pointer;
+}
+
+#link_list a{
+   color: #55979f;
+   text-decoration: none;
+}
+
+#link_list a:hover{
+   background-color: #2d494e;
+}
+
+#link_list li{
+   list-style: none;
+   padding: 0 0 10px 0;
+}
+
+.affinities p {
+   display: block;
+}
+
+.affinities img {
+   float: left;
+   padding-left: 0px;
+   padding-top: 0px;
+}
+
+.affinities {
+    overflow: auto;
+}
+
+#units img{
+   max-width: 100%;
+   padding: 0 0 15px 0;
+}
+/*
+#frame {
+    width: 800px;
+    height: 520px;
+    border: none;
+    -moz-transform: scale(0.5);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.5);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.5);
+    -webkit-transform-origin: 0 0;
+}
+*/
